@@ -1,0 +1,31 @@
+create database CM;
+create user cm@localhost identified by 'cm';
+grant all privileges on *.* to cm@localhost;
+flush privileges;
+
+drop table user;
+create table user (
+ Uid varchar(20),
+ Upass varchar(20),
+ Uname varchar(20)
+);
+
+drop table ingre;
+create table ingre (
+ Iid varchar(20),
+ Iname varchar(20),
+ Inum int
+# ,foreign key (Iid) references user(Uid)
+);
+
+drop table food;
+create table food(
+ Fname varchar(20),
+ Finame varchar(20),
+ Finum int,
+ Text text(60000),
+ IMGname varchar(50)
+);
+
+
+
