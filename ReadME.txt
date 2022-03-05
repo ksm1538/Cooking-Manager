@@ -1,4 +1,4 @@
-# Cooking-Manager
+<h2>Cooking-Manager</h2>
 <h3>사용자별 맞춤 음식 추천 사이트</h3>
 
 대학교 시절 팀프로젝트입니다.
